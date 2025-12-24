@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+<meta name="description" content="Aleksandar Milenkoski, cybersecurity, cybercrime, research, threat intelligence, threat research">	<title>Aleksandar Milenkoski | Cybercrime</title>
+	<meta name="keywords" content="Aleksandar Milenkoski, cybersecurity, cybercrime, research, threat intelligence, threat research" />
+	<link rel="stylesheet" type="text/css" href="cybercrime_html.css?h=52175b03">
+</head>
+<body>
+<div class="textstyle1">
+<div id="container_2b1a1ed5"><div id="container_2b1a1ed5_padding" ><div class="textstyle1"><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Aleksandar Milenkoski</a></span><span class="textstyle2"><br/><br/></span><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Threat Research | Threat Intelligence | Adversary Analysis</a></span></div>
+<div class="textstyle3"></div>
+</div></div><div id="container_4746e9ac"><div class="textstyle3"><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																		
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 3000; top: 0; left: 0; background-color: #2C2825; overflow-x: hidden; overflow-y:auto; transition: 0.5s;';
+				
+		//document.body.appendChild(sidebar);																		
+		// close button															
+		var closebtn = document.createElement("a");	
+                                //sidebar.appendChild(closebtn);						
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 3%; right: 5%; font-size: clamp(35px, 4.5vw, 60px); color: #FFFFFF; text-decoration: none;';	
+		closebtn.innerHTML = '\&#215 '; // &#215; or &#215; or &times;					
+		sidebar.appendChild(closebtn);	
+                               																	
+		// add links
+															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERESPIONAGE";
+			aelem.href = 'apt.html';
+                                                aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; margin-top: 15vh; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERCRIME";
+			aelem.href = 'cybercrime.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+			var aelem = document.createElement("a");					
+			aelem.textContent = "WINDOWS INTERNALS";
+			aelem.href = 'winternals.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);	
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "ACADEMIA";
+			aelem.href = 'academia.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "TALKS";
+			aelem.href = 'talks.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "COMMUNITY";
+			aelem.href = 'community.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+																			
+		document.body.appendChild(sidebar);											
+	}																				
+}																				
+createsidebarMenu();																																			
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "90%";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	//for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		//if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		//{																			
+			//child.style.transition = "margin-left .5s";							
+			//child.style.marginLeft = sidebarWidth;									
+		//} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>
+												<a href=" javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_39dc1fcb"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle3"></div>
+<div class="textstyle1">  <span class="textstyle4">&#8801; Menu</span>
+</div>
+<div class="textstyle3"></div>
+</div></div></div></a></div>
+<div class="textstyle1"><div id="menu_5f8bee95"><div  id="menu_5f8bee95_menualignmentwrapper" ><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_6f12c37a"  class="menustyle1 menu_5f8bee95_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle5">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="apt.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_2bf3ca44"  class="menustyle2 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cyberespionage</span>
+		</div>
+	</div>
+</a>
+<a href="cybercrime.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_10274de8"  class="menustyle3 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cybercrime</span>
+		</div>
+	</div>
+</a>
+<a href="winternals.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_6a79eea8"  class="menustyle4 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Windows Internals</span>
+		</div>
+	</div>
+</a>
+<a href="academia.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_3bb8a4fa"  class="menustyle5 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Academia</span>
+		</div>
+	</div>
+</a>
+<a href="talks.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_5d208a30"  class="menustyle6 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Talks</span>
+		</div>
+	</div>
+</a>
+<a href="community.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1aa18056"  class="menustyle7 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Community</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_5f8bee95= new wsp_menu('menu_5f8bee95', 'menu_5f8bee95', 15, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, closeWhenMouseOut: false} );
+
+		js_menu_5f8bee95.createMenuForItem('menuentry_6f12c37a', ["  <span class=\"textstyle7\">Cyberespionage</span> ", 'apt.html', '',
+		                                   "  <span class=\"textstyle7\">Cybercrime</span> ", 'cybercrime.html', '',
+		                                   "  <span class=\"textstyle7\">Windows Internals</span> ", 'winternals.html', '',
+		                                   "  <span class=\"textstyle7\">Academia</span> ", 'academia.html', '',
+		                                   "  <span class=\"textstyle7\">Talks</span> ", 'talks.html', '',
+		                                   "  <span class=\"textstyle7\">Community</span> ", 'community.html', '']
+		                                   , true);
+		js_menu_5f8bee95.createMenuForItem('menuentry_2bf3ca44', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_10274de8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_6a79eea8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_3bb8a4fa', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_5d208a30', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_1aa18056', []);
+
+	</script>
+</div></div></div></div>
+</div><div id="container_495e96cc"><div id="container_495e96cc_padding" ></div></div><div id="container_7a5ef65"><div id="container_7a5ef65_padding" ><div class="textstyle1"><div  id="placeh_36035886" >
+  <div class="textstyle3">
+<div id="container_6de072a3"><div id="container_6de072a3_padding" ><div class="textstyle3">    <span class="textstyle8"><a href="index.html">Home</a></span>
+    <span class="textstyle8"> &gt; Cybercrime</span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_4b146150"><div id="container_4b146150_padding" ><div class="textstyle3">    <span class="textstyle8">This list includes only research designated for public release </span>
+    <span class="textstyle10"><br/></span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_6627fe3f"><div id="container_6627fe3f_padding" ><div class="textstyle3"><span class="textstyle11">DBatLoader and Remcos RAT Sweep Eastern Europe</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">6 March, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/blog/dbatloader-and-remcos-rat-sweep-eastern-europe/" target="_blank" style="text-decoration:none"><div id="button_f1669e6">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_17435cc4"><div id="container_17435cc4_padding" ><div class="textstyle3"><span class="textstyle11">MalVirt | .NET Virtualization Thrives in Malvertising Attacks</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Tom Hegel<br/><br/></span><span class="textstyle10">2 February, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/malvirt-net-virtualization-thrives-in-malvertising-attacks/" target="_blank" style="text-decoration:none"><div id="button_e09eb27">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle14"><br/><br/></span><div id="container_5836ffdb"><div id="container_5836ffdb_padding" ><div class="textstyle3"><span class="textstyle11">SocGholish Diversifies and Expands Its Malware Staging Infrastructure to Counter Defenders</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">7 November, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/socgholish-diversifies-and-expands-its-malware-staging-infrastructure-to-counter-defenders/" target="_blank" style="text-decoration:none"><div id="button_58c0db27">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle14"><br/><br/></span><div id="container_4e07d171"><div id="container_4e07d171_padding" ><div class="textstyle3"><span class="textstyle11">Ransoms Without Ransomware, Data Corruption and Other New Tactics in Cyber Extortion</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Gijs Rijnders (Cyber Threat Intelligence - Netherlands Police)<br/><br/></span><span class="textstyle10">20 October, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/blog/ransoms-without-ransomware-data-corruption-and-other-new-tactics-in-cyber-extortion/" target="_blank" style="text-decoration:none"><div id="button_5ce0933f">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_5013974f"><div id="container_5013974f_padding" ><div class="textstyle3"><span class="textstyle11">Crimeware Trends | Ransomware Developers Turn to Intermittent Encryption to Evade Detection</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Jim Walter<br/><br/></span><span class="textstyle10">8 September, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/crimeware-trends-ransomware-developers-turn-to-intermittent-encryption-to-evade-detection/" target="_blank" style="text-decoration:none"><div id="button_40a3673a">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_337997e9"><div id="container_337997e9_padding" ><div class="textstyle3"><span class="textstyle11">SocGholish and Zloader &#8211; From Fake Updates and Installers to Owning Your Systems</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Lo&#239;c Castel, Yonatan Gidnian<br/><br/></span><span class="textstyle10">25 April, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/threat-analysis-report-socgholish-and-zloader-from-fake-updates-and-installers-to-owning-your-systems" target="_blank" style="text-decoration:none"><div id="button_6d574711">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7b53b1ce"><div id="container_7b53b1ce_padding" ><div class="textstyle3"><span class="textstyle11">All Paths Lead to Cobalt Strike - IcedID, Emotet and QBot</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Eli Salem, Aleksandar Milenkoski, Brian Janower, Yonatan Gidnian, Rotem Rostami<br/><br/></span><span class="textstyle10">10 February, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/threat-analysis-report-all-paths-lead-to-cobalt-strike-icedid-emotet-and-qbot" target="_blank" style="text-decoration:none"><div id="button_264dacea">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4350fc36"><div id="container_4350fc36_padding" ><div class="textstyle3"><span class="textstyle11">Inside the LockBit Arsenal - The StealBit Exfiltration Tool</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Kotaro Ogino<br/><br/></span><span class="textstyle10">16 December, 2021</span>    <span class="textstyle8"> </span>
+    <span class="textstyle13"><br/></span>
+    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/research/threat-analysis-report-inside-the-lockbit-arsenal-the-stealbit-exfiltration-tool" target="_blank" style="text-decoration:none"><div id="button_5ed90dfb">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_6866131b"><div id="container_6866131b_padding" ><div class="textstyle3"><span class="textstyle11">From Shathak Emails to the Conti Ransomware<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski, Eli Salem, Yonatan Gidnian<br/><br/></span><span class="textstyle10">9 November, 2021</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/threat-analysis-report-from-shatak-emails-to-the-conti-ransomware" target="_blank" style="text-decoration:none"><div id="button_4a140677">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_42d65384"><div id="container_42d65384_padding" ><div class="textstyle3"><span class="textstyle11">Snake Infostealer Malware<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski, Brian Janower<br/><br/></span><span class="textstyle10">28 October, 2021</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/research/threat-analysis-report-snake-infostealer-malware" target="_blank" style="text-decoration:none"><div id="button_61d4b2bb">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_c264c71"><div id="container_c264c71_padding" ><div class="textstyle3"><span class="textstyle11">Inside the Destructive PYSA Ransomware<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">27 September, 2021</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.cybereason.com/blog/research/threat-analysis-report-inside-the-destructive-pysa-ransomware" target="_blank" style="text-decoration:none"><div id="button_4b9730ab">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_f0421be"><div class="textstyle3">    <span class="textstyle9"><br/></span>
+</div>
+</div>    </div>
+</div>
+</div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+<meta name="description" content="Aleksandar Milenkoski, cybersecurity, community, research, threat intelligence, threat research">	<title>Aleksandar Milenkoski | Community</title>
+	<meta name="keywords" content="Aleksandar Milenkoski, cybersecurity, community, research, threat intelligence, threat research" />
+	<link rel="stylesheet" type="text/css" href="community_html.css?h=e91efd69">
+</head>
+<body>
+<div class="textstyle1">
+<div id="container_2b1a1ed5"><div id="container_2b1a1ed5_padding" ><div class="textstyle1"><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Aleksandar Milenkoski</a></span><span class="textstyle2"><br/><br/></span><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Threat Research | Threat Intelligence | Adversary Analysis</a></span></div>
+<div class="textstyle3"></div>
+</div></div><div id="container_4746e9ac"><div class="textstyle3"><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																		
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 3000; top: 0; left: 0; background-color: #2C2825; overflow-x: hidden; overflow-y:auto; transition: 0.5s;';
+				
+		//document.body.appendChild(sidebar);																		
+		// close button															
+		var closebtn = document.createElement("a");	
+                                //sidebar.appendChild(closebtn);						
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 3%; right: 5%; font-size: clamp(35px, 4.5vw, 60px); color: #FFFFFF; text-decoration: none;';	
+		closebtn.innerHTML = '\&#215 '; // &#215; or &#215; or &times;					
+		sidebar.appendChild(closebtn);	
+                               																	
+		// add links
+															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERESPIONAGE";
+			aelem.href = 'apt.html';
+                                                aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; margin-top: 15vh; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERCRIME";
+			aelem.href = 'cybercrime.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+			var aelem = document.createElement("a");					
+			aelem.textContent = "WINDOWS INTERNALS";
+			aelem.href = 'winternals.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);	
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "ACADEMIA";
+			aelem.href = 'academia.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "TALKS";
+			aelem.href = 'talks.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "COMMUNITY";
+			aelem.href = 'community.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+																			
+		document.body.appendChild(sidebar);											
+	}																				
+}																				
+createsidebarMenu();																																			
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "90%";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	//for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		//if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		//{																			
+			//child.style.transition = "margin-left .5s";							
+			//child.style.marginLeft = sidebarWidth;									
+		//} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>
+												<a href=" javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_39dc1fcb"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle3"></div>
+<div class="textstyle1">  <span class="textstyle4">&#8801; Menu</span>
+</div>
+<div class="textstyle3"></div>
+</div></div></div></a></div>
+<div class="textstyle1"><div id="menu_5f8bee95"><div  id="menu_5f8bee95_menualignmentwrapper" ><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_6f12c37a"  class="menustyle1 menu_5f8bee95_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle5">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="apt.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_2bf3ca44"  class="menustyle2 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cyberespionage</span>
+		</div>
+	</div>
+</a>
+<a href="cybercrime.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_10274de8"  class="menustyle3 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cybercrime</span>
+		</div>
+	</div>
+</a>
+<a href="winternals.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_6a79eea8"  class="menustyle4 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Windows Internals</span>
+		</div>
+	</div>
+</a>
+<a href="academia.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_3bb8a4fa"  class="menustyle5 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Academia</span>
+		</div>
+	</div>
+</a>
+<a href="talks.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_5d208a30"  class="menustyle6 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Talks</span>
+		</div>
+	</div>
+</a>
+<a href="community.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1aa18056"  class="menustyle7 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Community</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_5f8bee95= new wsp_menu('menu_5f8bee95', 'menu_5f8bee95', 15, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, closeWhenMouseOut: false} );
+
+		js_menu_5f8bee95.createMenuForItem('menuentry_6f12c37a', ["  <span class=\"textstyle7\">Cyberespionage</span> ", 'apt.html', '',
+		                                   "  <span class=\"textstyle7\">Cybercrime</span> ", 'cybercrime.html', '',
+		                                   "  <span class=\"textstyle7\">Windows Internals</span> ", 'winternals.html', '',
+		                                   "  <span class=\"textstyle7\">Academia</span> ", 'academia.html', '',
+		                                   "  <span class=\"textstyle7\">Talks</span> ", 'talks.html', '',
+		                                   "  <span class=\"textstyle7\">Community</span> ", 'community.html', '']
+		                                   , true);
+		js_menu_5f8bee95.createMenuForItem('menuentry_2bf3ca44', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_10274de8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_6a79eea8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_3bb8a4fa', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_5d208a30', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_1aa18056', []);
+
+	</script>
+</div></div></div></div>
+</div><div id="container_495e96cc"><div id="container_495e96cc_padding" ></div></div><div id="container_7a5ef65"><div id="container_7a5ef65_padding" ><div class="textstyle1"><div  id="placeh_36035886" >
+  <div class="textstyle3">
+<div id="container_5545c291"><div id="container_5545c291_padding" ><div class="textstyle3">    <span class="textstyle8"><a href="index.html">Home</a></span>
+    <span class="textstyle8"> &gt; Community</span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_2e52056e"><div id="container_2e52056e_padding" ><div class="textstyle3">    <span class="textstyle10">Exploring the VirusTotal Dataset | An Analyst&#8217;s Guide to Effective Threat Research </span>
+<span class="textstyle11"><br/><br/>Educational Article</span><span class="textstyle8"><br/><br/>Aleksandar Milenkoski, Jose Luis S&#225;nchez Mart&#237;nez (VirusTotal)<br/><br/>29</span><span class="textstyle12"> August, 2024</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle12"><br/></span>
+    <a href="https://www.sentinelone.com/labs/exploring-the-virustotal-dataset-an-analysts-guide-to-effective-threat-research/" target="_blank" style="text-decoration:none"><div id="button_186163be">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_397e434b"><div id="container_397e434b_padding" ><div class="textstyle3"><span class="textstyle10">11 Problems ChatGPT Can Solve For Reverse Engineers and Malware Analysts</span><span class="textstyle11"><br/><br/>Educational Article</span><span class="textstyle8"><br/><br/>Aleksandar Milenkoski, Phil Stokes<br/><br/></span><span class="textstyle12">21 December, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle12"><br/></span>
+    <a href="https://www.sentinelone.com/labs/11-problems-chatgpt-can-solve-for-reverse-engineers-and-malware-analysts/" target="_blank" style="text-decoration:none"><div id="button_732dc916">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_334a9c15"><div id="container_334a9c15_padding" ><div class="textstyle3"><span class="textstyle10">Windows Insights</span><span class="textstyle11"><br/><br/>GitHub Repository</span><span class="textstyle8"><br/><br/>The content of this repository aims to assist efforts on analysing inner working principles, functionalities, and properties of the Microsoft Windows operating system. This repository stores relevant documentation as well as executable files needed for conducting analysis studies.<br/><br/>Some of the content of this repository has been created in the course of a project named 'Studie zu Systemaufbau, Protokollierung, H&#228;rtung und Sicherheitsfunktionen in Windows 10 (SiSyPHuS Win10)' (ger.) - 'Study of system design, logging, hardening, and security functions in Windows 10' (eng.). This project has been contracted by the German Federal Office for Information Security. The work planned as part of the project is conducted by ERNW GmbH, starting in May 2017.<br/><br/></span>    <a href="https://github.com/ernw/Windows-Insight" target="_blank" style="text-decoration:none"><div id="button_1c81e407">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_ce9811c"><div id="container_ce9811c_padding" ><div class="textstyle3"><span class="textstyle10">hInjector</span><span class="textstyle8"><br/><br/></span><span class="textstyle11">GitHub Repository<br/></span><span class="textstyle8"><br/>hInjector is a customizable framework for injecting hypercall attacks during regular operation of a partially or fully paravirtualized guest virtual machine in a Xen-based environment.<br/><br/></span>    <a href="https://github.com/hinj/hInjector" target="_blank" style="text-decoration:none"><div id="button_336d3aee">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7e5cdcd"><div id="container_7e5cdcd_padding" ><div class="textstyle3"><span class="textstyle10">Awards - Grants &#8211; Fellowships<br/></span><span class="textstyle8"><br/></span><div id="container_766ea345"><div id="container_766ea345_padding" ><div class="textstyle3">    <span class="textstyle11">SPEC Kaivalya Dixit Distinguished Dissertation Award</span>
+<span class="textstyle8"> recognizing outstanding doctoral dissertations, awarded by the Standard Performance Evaluation Corporation (SPEC), USA<br/></span><span class="textstyle11"><br/></span><span class="textstyle12">April 2018</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_144d08a2"><div id="container_144d08a2_padding" ><div class="textstyle3"><span class="textstyle11">Award for exceptional scientific achievements</span><span class="textstyle8">, awarded by the Lower Franconian Memorial Foundation for Science, Germany<br/><br/></span><span class="textstyle12">May 2017</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_49ab8ec4"><div id="container_49ab8ec4_padding" ><div class="textstyle3"><span class="textstyle11">Grant for research in IT security</span><span class="textstyle8">, awarded by&#160;the German Research Foundation, Germany<br/></span><span class="textstyle11"><br/></span><span class="textstyle12">April 2016</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_1625258f"><div id="container_1625258f_padding" ><div class="textstyle3"><span class="textstyle11">SPECtacular Award for Outstanding Research</span><span class="textstyle8">, awarded by the Standard Performance Evaluation Corporation (SPEC), USA<br/><br/></span><span class="textstyle12">January 2016</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_5fd15a29"><div id="container_5fd15a29_padding" ><div class="textstyle3"><span class="textstyle11">SPECtacular Award for outstanding service to SPEC</span><span class="textstyle8">, awarded by the Standard Performance Evaluation Corporation (SPEC), USA<br/><br/></span><span class="textstyle12">March 2014</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_2d59430d"><div id="container_2d59430d_padding" ><div class="textstyle3"><span class="textstyle11">Recognition of Service Award</span><span class="textstyle8">, awarded by the Standard Performance Evaluation Corporation (SPEC), USA<br/><br/></span><span class="textstyle12">March 2013</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_3865f351"><div id="container_3865f351_padding" ><div class="textstyle3"><span class="textstyle11">Marie Sklodowska-Curie&#160;Fellowship</span><span class="textstyle8">, awarded by the European Commission/European Union<br/><br/></span><span class="textstyle12">September 2011<br/></span></div>
+</div></div><span class="textstyle8"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_594c6e66"><div id="container_594c6e66_padding" ><div class="textstyle3"><span class="textstyle11">Educational and Training Engagements<br/><br/></span><div id="container_3618d30e"><div id="container_3618d30e_padding" ><div class="textstyle3"><span class="textstyle11">Advanced Threat Hunting: Automating Large-Scale Operations with LLMs<br/></span><span class="textstyle8"><br/>LabsCon 2025 Conference, USA<br/><br/></span><span class="textstyle12">September 2025</span></div>
+</div></div><span class="textstyle11"><br/><br/></span><div id="container_628f127b"><div id="container_628f127b_padding" ><div class="textstyle3">    <span class="textstyle11">Adjunct Lecturer</span>
+    <span class="textstyle8"> </span>
+<span class="textstyle11"><br/></span><span class="textstyle8"><br/></span><span class="textstyle14">Baden-W&#252;rttemberg Cooperative State University Mosbach</span><span class="textstyle8">, Germany</span></div>
+</div></div><span class="textstyle11"><br/><br/></span><div id="container_4c287355"><div id="container_4c287355_padding" ><div class="textstyle3">    <span class="textstyle11">Adjunct Lecturer</span>
+    <span class="textstyle8"> </span>
+<span class="textstyle11"><br/></span><span class="textstyle8"><br/>Department of Mathematics and Informatics, University of W&#252;rzburg, Germany</span></div>
+</div></div><span class="textstyle11"><br/></span><span class="textstyle8"><br/></span><div id="container_502a3849"><div id="container_502a3849_padding" ><div class="textstyle3"><span class="textstyle11">Insight into Windows Internals<br/></span><span class="textstyle8"><br/>TROOPERS 2018/2019/2020 Conferences, Heidelberg, Germany<br/><br/></span><span class="textstyle12">March 2018, 2019, 2020</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_3defd5da"><div id="container_3defd5da_padding" ><div class="textstyle3"><span class="textstyle11">Windows Internals<br/></span><span class="textstyle8"><br/>German Federal Office for Information Security, Bonn, Germany<br/><br/></span><span class="textstyle12">June 11 -15, 2018<br/></span></div>
+</div></div><span class="textstyle8"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_64eb3673"><div id="container_64eb3673_padding" ><div class="textstyle3"><span class="textstyle10">Functions &#8211; Memberships &#8211; Organization activities</span><span class="textstyle11"><br/><br/></span><div id="container_43f3c25d"><div id="container_43f3c25d_padding" ><div class="textstyle3">    <span class="textstyle11">Research and industry paper reviewer</span>
+    <span class="textstyle8"> (selection)<br/><br/>IEEE Transactions on Information Forensics &amp; Security<br/>IEEE Transactions on Services Computing<br/>IEEE International Symposium on Software Reliability Engineering ISSRE 2015/2020<br/>ACM SIGMETRICS 2012<br/>IEEE Cloud Computing Magazine<br/></span>
+</div>
+</div></div><span class="textstyle11"><br/><br/></span><div id="container_1ab19497"><div id="container_1ab19497_padding" ><div class="textstyle3"><span class="textstyle11">Elected Chair</span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://research.spec.org/working-groups/rg-ids-benchmarking.html" target="_blank">SPEC RG Security Benchmarking Working Group</a></span><span class="textstyle8"><br/><br/></span><span class="textstyle12">September 2019 &#8211; present</span><span class="textstyle9"><br/></span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_21df2213"><div id="container_21df2213_padding" ><div class="textstyle3"><span class="textstyle11">Program Committee Member</span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://2020.issre.net/research-committees.html" target="_blank">International Symposium on Software Reliability Engineering (ISSRE) 2020</a></span><span class="textstyle8"><br/><br/></span><span class="textstyle12">July 2020 - October 2020</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_27dbbd60"><div id="container_27dbbd60_padding" ><div class="textstyle3"><span class="textstyle11">Elected Secretary</span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://research.spec.org/working-groups/rg-cloud.html" target="_blank">SPEC RG Cloud Working Group</a></span><span class="textstyle8"><br/><br/></span><span class="textstyle12">April 2012 &#8211; December 2016</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_17bcaa8a"><div id="container_17bcaa8a_padding" ><div class="textstyle3"><span class="textstyle11">Member</span><span class="textstyle8"><br/></span><span class="textstyle8"><a href="https://cloudsecurityalliance.org/" target="_blank">Cloud Security Alliance (CSA)</a></span><span class="textstyle8">. Virtualization Working Group<br/><br/></span><span class="textstyle12">September 2015 &#8211; September 2016</span><span class="textstyle15"><br/></span></div>
+</div></div><span class="textstyle8"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_1b7a615c"><div class="textstyle3">    <span class="textstyle9"><br/></span>
+</div>
+</div>    </div>
+</div>
+</div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>

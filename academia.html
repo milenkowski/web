@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+<meta name="description" content="Aleksandar Milenkoski, cybersecurity, academia, research, threat intelligence, threat research">	<title>Aleksandar Milenkoski | Academia</title>
+	<meta name="keywords" content="Aleksandar Milenkoski, cybersecurity, academia, research, threat intelligence, threat research" />
+	<link rel="stylesheet" type="text/css" href="academia_html.css?h=5c1b316f">
+</head>
+<body>
+<div class="textstyle1">
+<div id="container_2b1a1ed5"><div id="container_2b1a1ed5_padding" ><div class="textstyle1"><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Aleksandar Milenkoski</a></span><span class="textstyle2"><br/><br/></span><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Threat Research | Threat Intelligence | Adversary Analysis</a></span></div>
+<div class="textstyle3"></div>
+</div></div><div id="container_4746e9ac"><div class="textstyle3"><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																		
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 3000; top: 0; left: 0; background-color: #2C2825; overflow-x: hidden; overflow-y:auto; transition: 0.5s;';
+				
+		//document.body.appendChild(sidebar);																		
+		// close button															
+		var closebtn = document.createElement("a");	
+                                //sidebar.appendChild(closebtn);						
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 3%; right: 5%; font-size: clamp(35px, 4.5vw, 60px); color: #FFFFFF; text-decoration: none;';	
+		closebtn.innerHTML = '\&#215 '; // &#215; or &#215; or &times;					
+		sidebar.appendChild(closebtn);	
+                               																	
+		// add links
+															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERESPIONAGE";
+			aelem.href = 'apt.html';
+                                                aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; margin-top: 15vh; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERCRIME";
+			aelem.href = 'cybercrime.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+			var aelem = document.createElement("a");					
+			aelem.textContent = "WINDOWS INTERNALS";
+			aelem.href = 'winternals.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);	
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "ACADEMIA";
+			aelem.href = 'academia.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "TALKS";
+			aelem.href = 'talks.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "COMMUNITY";
+			aelem.href = 'community.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+																			
+		document.body.appendChild(sidebar);											
+	}																				
+}																				
+createsidebarMenu();																																			
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "90%";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	//for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		//if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		//{																			
+			//child.style.transition = "margin-left .5s";							
+			//child.style.marginLeft = sidebarWidth;									
+		//} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>
+												<a href=" javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_39dc1fcb"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle3"></div>
+<div class="textstyle1">  <span class="textstyle4">&#8801; Menu</span>
+</div>
+<div class="textstyle3"></div>
+</div></div></div></a></div>
+<div class="textstyle1"><div id="menu_5f8bee95"><div  id="menu_5f8bee95_menualignmentwrapper" ><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_6f12c37a"  class="menustyle1 menu_5f8bee95_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle5">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="apt.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_2bf3ca44"  class="menustyle2 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cyberespionage</span>
+		</div>
+	</div>
+</a>
+<a href="cybercrime.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_10274de8"  class="menustyle3 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cybercrime</span>
+		</div>
+	</div>
+</a>
+<a href="winternals.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_6a79eea8"  class="menustyle4 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Windows Internals</span>
+		</div>
+	</div>
+</a>
+<a href="academia.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_3bb8a4fa"  class="menustyle5 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Academia</span>
+		</div>
+	</div>
+</a>
+<a href="talks.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_5d208a30"  class="menustyle6 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Talks</span>
+		</div>
+	</div>
+</a>
+<a href="community.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1aa18056"  class="menustyle7 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Community</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_5f8bee95= new wsp_menu('menu_5f8bee95', 'menu_5f8bee95', 15, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, closeWhenMouseOut: false} );
+
+		js_menu_5f8bee95.createMenuForItem('menuentry_6f12c37a', ["  <span class=\"textstyle7\">Cyberespionage</span> ", 'apt.html', '',
+		                                   "  <span class=\"textstyle7\">Cybercrime</span> ", 'cybercrime.html', '',
+		                                   "  <span class=\"textstyle7\">Windows Internals</span> ", 'winternals.html', '',
+		                                   "  <span class=\"textstyle7\">Academia</span> ", 'academia.html', '',
+		                                   "  <span class=\"textstyle7\">Talks</span> ", 'talks.html', '',
+		                                   "  <span class=\"textstyle7\">Community</span> ", 'community.html', '']
+		                                   , true);
+		js_menu_5f8bee95.createMenuForItem('menuentry_2bf3ca44', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_10274de8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_6a79eea8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_3bb8a4fa', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_5d208a30', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_1aa18056', []);
+
+	</script>
+</div></div></div></div>
+</div><div id="container_495e96cc"><div id="container_495e96cc_padding" ></div></div><div id="container_7a5ef65"><div id="container_7a5ef65_padding" ><div class="textstyle1"><div  id="placeh_36035886" >
+  <div class="textstyle3">
+<div id="container_35ba7929"><div id="container_35ba7929_padding" ><div class="textstyle3">    <span class="textstyle8"><a href="index.html">Home</a></span>
+    <span class="textstyle8"> &gt; Academia</span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_749be54d"><div id="container_749be54d_padding" ><div class="textstyle3"><span class="textstyle10">Measuring the Performance Impact of Branching Instructions<br/></span><span class="textstyle11"><br/></span><span class="textstyle8">Lukas Beierlieb, Lukas Iffl&#228;nder, Aleksandar Milenkoski, Thomas Prantl, Samuel Kounev<br/><br/>The 12th Symposium on Software Performance 2021 (SSP&#8217;21)<br/><br/></span><span class="textstyle12">10 November, 2021</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/measuring_performance.pdf" target="_blank" style="text-decoration:none"><div id="button_5939e075">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_629472c"><div id="container_629472c_padding" ><div class="textstyle3"><span class="textstyle10">Software Testing Strategies for Detecting Hypercall Handlers' Aging-related Bugs</span><span class="textstyle11"><br/><br/></span><span class="textstyle8">Lukas Beierlieb, Alberto Avritzer, Lukas Iffl&#228;nder,  Nuno Antunes, Aleksandar Milenkoski, Samuel Kounev</span><span class="textstyle11"><br/></span><span class="textstyle8"><br/>2021 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)<br/><br/></span><span class="textstyle12">25 October, 2021</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://ieeexplore.ieee.org/document/9700389" target="_blank" style="text-decoration:none"><div id="button_6d8acdac">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4d455d72"><div id="container_4d455d72_padding" ><div class="textstyle3"><span class="textstyle10">Towards Testing the Performance Influence of Hypervisor Hypercall Interface Behavior</span><span class="textstyle11"><br/><br/></span><span class="textstyle8">Lukas Beierlieb, Lukas Iffl&#228;nder,  Samuel Kounev, Aleksandar Milenkoski</span><span class="textstyle11"><br/></span><span class="textstyle8"><br/>The 10th Symposium on Software Performance 2019 (SSP&#8217;19)<br/><br/></span><span class="textstyle12">4 November, 2019</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/beierlieb_2019_towardstestingtheperformanceinfluenceofhypervisorhypercallinterfacebehavior.pdf" target="_blank" style="text-decoration:none"><div id="button_328c85df">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7ac86827"><div id="container_7ac86827_padding" ><div class="textstyle3"><span class="textstyle10">Towards Testing the Software Aging Behavior of Hypervisor Hypercall Interfaces</span><span class="textstyle11"><br/><br/></span><span class="textstyle8">Lukas Beierlieb, Lukas Iffl&#228;nder, Aleksandar Milenkoski, Charles F. Goncalves, Nuno Antunes, Samuel Kounev<br/><br/>2019 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW)<br/><br/></span><span class="textstyle12">27 October, 2019</span><span class="textstyle8"> <br/></span><span class="textstyle12"><br/></span>    <a href="https://ieeexplore.ieee.org/document/8990328" target="_blank" style="text-decoration:none"><div id="button_5e7a25c1">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/beierlieb_2019_towardstestingthesoftwareagingbehaviorofhypervisorhypercallinterfaces.pdf" target="_blank" style="text-decoration:none"><div id="button_1b956070">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_50de1384"><div id="container_50de1384_padding" ><div class="textstyle3"><span class="textstyle10">CUP: A Formalism for Expressing Cloud Usage Patterns for Experts and Non-Experts</span><span class="textstyle11"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Alexandru Iosup, Samuel Kounev, Kai Sachs, Diane E. Mularz, Jonathan A. Curtiss, Jason J. Ding, Florian Rosenberg, Piotr Rygielski<br/><br/>IEEE Cloud Computing<br/><br/></span><span class="textstyle12">27 October, 2019</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://ieeexplore.ieee.org/document/8383658" target="_blank" style="text-decoration:none"><div id="button_6bc99ec5">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_716b559c"><div id="container_716b559c_padding" ><div class="textstyle3"><span class="textstyle10">Software Architectures for Self-Protection in IaaS Clouds</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>K.R. Jayaram, Aleksandar Milenkoski, Samuel Kounev<br/><br/>Self-Aware Computing Systems<br/><br/></span><span class="textstyle12">24 January, 2017</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://link.springer.com/chapter/10.1007/978-3-319-47474-8_21" target="_blank" style="text-decoration:none"><div id="button_420ba6de">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_1281ecf4"><div id="container_1281ecf4_padding" ><div class="textstyle3"><span class="textstyle10">Benchmarking Intrusion Detection Systems with Adaptive Provisioning of Virtualized Resources</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, K.R. Jayaram, Samuel Kounev<br/><br/>Self-Aware Computing Systems<br/><br/></span><span class="textstyle12">24 January, 2017</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://link.springer.com/chapter/10.1007/978-3-319-47474-8_22" target="_blank" style="text-decoration:none"><div id="button_65c1df42">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_6dc55ba2"><div id="container_6dc55ba2_padding" ><div class="textstyle3"><span class="textstyle10">Metrics and Benchmarks for Self-Aware Computing Systems</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Nikolas Herbst, Steffen Becker, Samuel Kounev, Heiko Koziolek, Martina Maggio, Aleksandar Milenkoski, Evgenia Smirni<br/><br/>Self-Aware Computing Systems<br/><br/></span><span class="textstyle12">24 January, 2017<br/><br/></span>    <a href="https://link.springer.com/chapter/10.1007/978-3-319-47474-8_14" target="_blank" style="text-decoration:none"><div id="button_4bf64079">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_2d29761"><div id="container_2d29761_padding" ><div class="textstyle3"><span class="textstyle10">Self-Aware Computing Systems</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Samuel Kounev, Jeffrey O. Kephart, Aleksandar Milenkoski, Xiaoyun Zhu (Editors)<br/><br/>Self-Aware Computing Systems<br/><br/></span><span class="textstyle12">24 January, 2017</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://link.springer.com/book/10.1007/978-3-319-47474-8" target="_blank" style="text-decoration:none"><div id="button_601aa4ff">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_a3159ca"><div id="container_a3159ca_padding" ><div class="textstyle3"><span class="textstyle10">Evaluation of Intrusion Detection Systems in Virtualized Environments</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski<br/><br/>Doctoral thesis, University of W&#252;rzburg<br/><br/></span><span class="textstyle12">16 December, 2016</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://opus.bibliothek.uni-wuerzburg.de/frontdoor/index/index/docId/14184" target="_blank" style="text-decoration:none"><div id="button_3ed1d252">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/phd_thesis.pdf" target="_blank" style="text-decoration:none"><div id="button_70a63542">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_58559391"><div id="container_58559391_padding" ><div class="textstyle3"><span class="textstyle10">Quantifying the Attack Detection Accuracy of Intrusion Detection Systems in Virtualized Environments</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, K. R. Jayaram, Nuno Antunes, Marco Vieira, Samuel Kounev<br/><br/>The 27th IEEE International Symposium on Software Reliability Engineering (ISSRE 2016)<br/><br/></span><span class="textstyle12">23 October, 2016<br/><br/></span>    <a href="https://ieeexplore.ieee.org/document/7774527" target="_blank" style="text-decoration:none"><div id="button_27e5a43a">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/mijaanviko2016_issre_quantifying.pdf" target="_blank" style="text-decoration:none"><div id="button_1d5685db">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_1b050026"><div id="container_1b050026_padding" ><div class="textstyle3"><span class="textstyle10">Evaluation of Intrusion Detection Systems in Virtualized Environments Using Attack Injection</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Bryan D. Payne,  Nuno Antunes, Marco Vieira, Samuel Kounev, Alberto Avritzer, Matthias Luft<br/><br/>The 18th International Symposium on Research in Attacks, Intrusions, and Defenses (RAID 2015)<br/><br/></span><span class="textstyle12">12 December, 2015</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://link.springer.com/chapter/10.1007/978-3-319-26362-5_22" target="_blank" style="text-decoration:none"><div id="button_3f4b6d9">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/mipaanvikoavlu2015_raid_challenges.pdf" target="_blank" style="text-decoration:none"><div id="button_5e7e8ced">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_77af08f6"><div id="container_77af08f6_padding" ><div class="textstyle3"><span class="textstyle10">Evaluating Computer Intrusion Detection Systems: A Survey of Common Practices</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Marco Vieira, Samuel Kounev, Alberto Avritzer, Bryan D. Payne <br/><br/>ACM Computing Surveys<br/><br/></span><span class="textstyle12">29 September, 2015</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://dl.acm.org/doi/10.1145/2808691" target="_blank" style="text-decoration:none"><div id="button_67c656a6">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/mivikoavpa2015_csur_idseval.pdf" target="_blank" style="text-decoration:none"><div id="button_76406047">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_6219a5ab"><div id="container_6219a5ab_padding" ><div class="textstyle3"><span class="textstyle10">Challenges of Assessing the Hypercall Interface Robustness</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Diogo Carvalho, Nuno Antunes, Marco Vieira, Aleksandar Milenkoski, Samuel Kounev<br/><br/>The 45th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN 2015)<br/><br/></span><span class="textstyle12">22 June, 2015</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/caanvimiko2015_dsn_challenges.pdf" target="_blank" style="text-decoration:none"><div id="button_468034bf">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_45c7b951"><div id="container_45c7b951_padding" ><div class="textstyle3"><span class="textstyle10">Experience Report: An Analysis of Hypercall Handler Vulnerabilities<br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Bryan D. Payne, Nuno Antunes, Marco Vieira, Samuel Kounev<br/><br/>The 25th IEEE International Symposium on Software Reliability Engineering (ISSRE 2014)<br/><br/></span><span class="textstyle12">3 November, 2014</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="https://ieeexplore.ieee.org/document/6982618?arnumber=6982618" target="_blank" style="text-decoration:none"><div id="button_3984ab6a">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <a href="rc_images/mipaanviko2014_issre_ananalhyphanvulns.pdf" target="_blank" style="text-decoration:none"><div id="button_2e62d96">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4be69b66"><div id="container_4be69b66_padding" ><div class="textstyle3"><span class="textstyle10">Technical Information on Vulnerabilities of Hypercall Handlers</span><span class="textstyle13"><br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Marco Vieira, Bryan D. Payne, Nuno Antunes, Samuel Kounev<br/><br/>SPEC Research Group - IDS Benchmarking Working Group, Standard Performance Evaluation Corporation (SPEC)<br/><br/></span><span class="textstyle12">23 August, 2014</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/spec_rg_2014_001_hypercallvulnerabilities.pdf" target="_blank" style="text-decoration:none"><div id="button_6b7265a9">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_13a168f5"><div id="container_13a168f5_padding" ><div class="textstyle3"><span class="textstyle10">HInjector: Injecting Hypercall Attacks for Evaluating VMI-based Intrusion Detection Systems<br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Bryan D. Payne, Nuno Antunes, Marco Vieira, Samuel Kounev <br/><br/>The 2013 Annual Computer Security Applications Conference (ACSAC 2013)<br/><br/></span><span class="textstyle12">12 December, 2013</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/mipaanviko2013_acsac_hinjector.pdf" target="_blank" style="text-decoration:none"><div id="button_6f37ed78">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_61fda8ec"><div id="container_61fda8ec_padding" ><div class="textstyle3"><span class="textstyle10">On Benchmarking Intrusion Detection Systems in Virtualized Environments<br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Samuel Kounev, Alberto Avritzer, Nuno Antunes, Marco Vieira<br/><br/>SPEC Research Group - IDS Benchmarking Working Group, Standard Performance Evaluation Corporation (SPEC)<br/><br/></span><span class="textstyle12">26 June, 2013</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/1410_1160.pdf" target="_blank" style="text-decoration:none"><div id="button_775da27f">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_2205af59"><div id="container_2205af59_padding" ><div class="textstyle3"><span class="textstyle10">Cloud Usage Patterns: A Formalism for Description of Cloud Usage Scenarios<br/></span><span class="textstyle8"><br/>Aleksandar Milenkoski, Alexandru Iosup, Samuel Kounev, Kai Sachs, Piotr Rygielski, Jason Ding, Walfredo Cirne, Florian Rosenberg<br/><br/>SPEC Research Group - Cloud Working Group, Standard Performance Evaluation Corporation (SPEC)<br/><br/></span><span class="textstyle12">28 May, 2013</span><span class="textstyle8"><br/></span><span class="textstyle12"><br/></span>    <a href="rc_images/spec_rg_2013_001_cloudusagepatterns.pdf" target="_blank" style="text-decoration:none"><div id="button_6b684c06">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_c142888"><div class="textstyle3">    <span class="textstyle9"><br/></span>
+</div>
+</div>    </div>
+</div>
+</div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>

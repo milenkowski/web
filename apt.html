@@ -1,0 +1,527 @@
+<link rel="stylesheet" href="rc_images/main.css" type="text/css"/>  <!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+<meta name="description" content="Aleksandar Milenkoski, cybersecurity, cyberespionage, APT, advanced persistent threat, research, threat intelligence, threat research">	<title>Aleksandar Milenkoski | Cyberespionage</title>
+	<meta name="keywords" content="Aleksandar Milenkoski, cybersecurity, cyberespionage, APT, advanced persistent threat, research, threat intelligence, threat research" />
+	<link rel="stylesheet" type="text/css" href="apt_html.css?h=086e2989">
+</head>
+<body>
+<div class="textstyle1">
+<div id="container_2b1a1ed5"><div id="container_2b1a1ed5_padding" ><div class="textstyle1"><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Aleksandar Milenkoski</a></span><span class="textstyle2"><br/><br/></span><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Threat Research | Threat Intelligence | Adversary Analysis</a></span></div>
+<div class="textstyle3"></div>
+</div></div><div id="container_4746e9ac"><div class="textstyle3"><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																		
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 3000; top: 0; left: 0; background-color: #2C2825; overflow-x: hidden; overflow-y:auto; transition: 0.5s;';
+				
+		//document.body.appendChild(sidebar);																		
+		// close button															
+		var closebtn = document.createElement("a");	
+                                //sidebar.appendChild(closebtn);						
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 3%; right: 5%; font-size: clamp(35px, 4.5vw, 60px); color: #FFFFFF; text-decoration: none;';	
+		closebtn.innerHTML = '\&#215 '; // &#215; or &#215; or &times;					
+		sidebar.appendChild(closebtn);	
+                               																	
+		// add links
+															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERESPIONAGE";
+			aelem.href = 'apt.html';
+                                                aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; margin-top: 15vh; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERCRIME";
+			aelem.href = 'cybercrime.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+			var aelem = document.createElement("a");					
+			aelem.textContent = "WINDOWS INTERNALS";
+			aelem.href = 'winternals.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);	
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "ACADEMIA";
+			aelem.href = 'academia.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "TALKS";
+			aelem.href = 'talks.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "COMMUNITY";
+			aelem.href = 'community.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+																			
+		document.body.appendChild(sidebar);											
+	}																				
+}																				
+createsidebarMenu();																																			
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "90%";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	//for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		//if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		//{																			
+			//child.style.transition = "margin-left .5s";							
+			//child.style.marginLeft = sidebarWidth;									
+		//} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>
+												<a href=" javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_39dc1fcb"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle3"></div>
+<div class="textstyle1">  <span class="textstyle4">&#8801; Menu</span>
+</div>
+<div class="textstyle3"></div>
+</div></div></div></a></div>
+<div class="textstyle1"><div id="menu_5f8bee95"><div  id="menu_5f8bee95_menualignmentwrapper" ><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_6f12c37a"  class="menustyle1 menu_5f8bee95_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle5">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="apt.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_2bf3ca44"  class="menustyle2 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cyberespionage</span>
+		</div>
+	</div>
+</a>
+<a href="cybercrime.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_10274de8"  class="menustyle3 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cybercrime</span>
+		</div>
+	</div>
+</a>
+<a href="winternals.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_6a79eea8"  class="menustyle4 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Windows Internals</span>
+		</div>
+	</div>
+</a>
+<a href="academia.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_3bb8a4fa"  class="menustyle5 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Academia</span>
+		</div>
+	</div>
+</a>
+<a href="talks.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_5d208a30"  class="menustyle6 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Talks</span>
+		</div>
+	</div>
+</a>
+<a href="community.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1aa18056"  class="menustyle7 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Community</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_5f8bee95= new wsp_menu('menu_5f8bee95', 'menu_5f8bee95', 15, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, closeWhenMouseOut: false} );
+
+		js_menu_5f8bee95.createMenuForItem('menuentry_6f12c37a', ["  <span class=\"textstyle7\">Cyberespionage</span> ", 'apt.html', '',
+		                                   "  <span class=\"textstyle7\">Cybercrime</span> ", 'cybercrime.html', '',
+		                                   "  <span class=\"textstyle7\">Windows Internals</span> ", 'winternals.html', '',
+		                                   "  <span class=\"textstyle7\">Academia</span> ", 'academia.html', '',
+		                                   "  <span class=\"textstyle7\">Talks</span> ", 'talks.html', '',
+		                                   "  <span class=\"textstyle7\">Community</span> ", 'community.html', '']
+		                                   , true);
+		js_menu_5f8bee95.createMenuForItem('menuentry_2bf3ca44', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_10274de8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_6a79eea8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_3bb8a4fa', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_5d208a30', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_1aa18056', []);
+
+	</script>
+</div></div></div></div>
+</div><div id="container_495e96cc"><div id="container_495e96cc_padding" ></div></div><div id="container_7a5ef65"><div id="container_7a5ef65_padding" ><div class="textstyle1"><div  id="placeh_36035886" >
+  <div class="textstyle3">
+<div id="container_59b95f62"><div id="container_59b95f62_padding" ><div class="textstyle3">    <span class="textstyle8"><a href="index.html">Home</a></span>
+    <span class="textstyle8"> &gt; Cyberespionage</span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_74af1da0"><div id="container_74af1da0_padding" ><div class="textstyle3">    <span class="textstyle8">This list includes only research designated for public release </span>
+    <span class="textstyle10"><br/></span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_64df250d"><div id="container_64df250d_padding" ><div class="textstyle3">    <span class="textstyle11">Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms </span>
+<span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Sreekar Madabushi (Validin), Kenneth Kinion (Validin)<br/><br/></span><span class="textstyle10">4 September, 2025</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/" target="_blank" style="text-decoration:none"><div id="button_80c8255">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7874209d"><div id="container_7874209d_padding" ><div class="textstyle3">    <span class="textstyle11">Follow the Smoke | China-nexus Threat Actors Hammer At the Doors of Top Tier Targets </span>
+<span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Tom Hegel<br/><br/></span><span class="textstyle10">9 June, 2025</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/follow-the-smoke-china-nexus-threat-actors-hammer-at-the-doors-of-top-tier-targets/" target="_blank" style="text-decoration:none"><div id="button_249f2627">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_19559da3"><div id="container_19559da3_padding" ><div class="textstyle3">    <span class="textstyle11">Top Tier Target | What It Takes to Defend a Cybersecurity Company from Today&#8217;s Adversaries </span>
+<span class="textstyle12"><br/><br/></span><span class="textstyle8">Tom Hegel, Aleksandar Milenkoski, Jim Walter<br/><br/></span><span class="textstyle10">28 April, 2025</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/top-tier-target-what-it-takes-to-defend-a-cybersecurity-company-from-todays-adversaries/" target="_blank" style="text-decoration:none"><div id="button_24d71f8">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_b311b30"><div id="container_b311b30_padding" ><div class="textstyle3"><span class="textstyle11">Ransomware&#8217;s New Masters: How States Are Hijacking Cybercrime</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Jiro Minier (Deutsche Cyber-Sicherheitsorganisation - DCSO), Julian-Ferdinand V&#246;gele (Recorded Future), Max Smeets (Virtual Routes), Taylor Grossman<br/><br/></span><span class="textstyle10">23 April, 2025</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://virtual-routes.org/pharos-report-no-3-ransomwares-new-masters-how-states-are-hijacking-cybercrime/" target="_blank" style="text-decoration:none"><div id="button_5290aaf6">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_6485017a"><div id="container_6485017a_padding" ><div class="textstyle3">    <span class="textstyle11">Censorship as a Service | Leak Reveals Public-Private Collaboration to Monitor Chinese Cyberspace </span>
+<span class="textstyle12"><br/><br/></span><span class="textstyle8">Alex Delamotte, Aleksandar Milenkoski, Dakota Carry<br/><br/></span><span class="textstyle10">21 February, 2025</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/censorship-as-a-service-leak-reveals-public-private-collaboration-to-monitor-chinese-cyberspace/" target="_blank" style="text-decoration:none"><div id="button_377f9bd">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_20c0a65f"><div id="container_20c0a65f_padding" ><div class="textstyle3"><span class="textstyle11">Operation Digital Eye | Chinese APT Compromises Critical Digital Infrastructure via Visual Studio Code Tunnels</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Luigi Martire (Tinexta Cyber)<br/><br/></span><span class="textstyle10">10 December, 2024</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/operation-digital-eye-chinese-apt-compromises-critical-digital-infrastructure-via-visual-studio-code-tunnels/" target="_blank" style="text-decoration:none"><div id="button_7519d2a2">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7b9e1d04"><div id="container_7b9e1d04_padding" ><div class="textstyle3"><span class="textstyle11">ChamelGang &amp; Friends | Cyberespionage Groups Attacking Critical Infrastructure with Ransomware</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Julian-Ferdinand V&#246;gele (Recorded Future)<br/><br/></span><span class="textstyle10">26 June, 2024</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/chamelgang-attacking-critical-infrastructure-with-ransomware/" target="_blank" style="text-decoration:none"><div id="button_5f5ee9dd">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_7b26615d"><div id="container_7b26615d_padding" ><div class="textstyle3"><span class="textstyle11">ChamelGang &amp; Friends | Cyberespionage Groups Attacking Critical Infrastructure with Ransomware (Full Report)</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Julian-Ferdinand V&#246;gele (Recorded Future)<br/><br/></span><span class="textstyle10">26 June, 2024</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://assets.sentinelone.com/sentinellabs/chamelgang-friends-en" target="_blank" style="text-decoration:none"><div id="button_68e3b2c9">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4f2cba3f"><div id="container_4f2cba3f_padding" ><div class="textstyle3"><span class="textstyle11">Doppelg&#228;nger | Russia-Aligned Influence Operation Targets Germany <br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">22 February, 2024</span><span class="textstyle8"><br/><br/></span>    <a href="https://www.sentinelone.com/labs/doppelganger-russia-aligned-influence-operation-targets-germany/" target="_blank" style="text-decoration:none"><div id="button_12b12d9a">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_dfedc4"><div id="container_dfedc4_padding" ><div class="textstyle3"><span class="textstyle11">Unmasking I-Soon | The Leak That Revealed China&#8217;s Cyber Operations<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Dakota Cary, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">21 February, 2024</span><span class="textstyle8"><br/><br/></span>    <a href="https://www.sentinelone.com/labs/unmasking-i-soon-the-leak-that-revealed-chinas-cyber-operations/" target="_blank" style="text-decoration:none"><div id="button_76651f5c">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_774f966b"><div id="container_774f966b_padding" ><div class="textstyle3"><span class="textstyle11">ScarCruft | Attackers Gather Strategic Intelligence and Target Cybersecurity Professionals<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski, Tom Hegel<br/><br/></span><span class="textstyle10">22 January, 2024</span><span class="textstyle8"><br/><br/></span>    <a href="https://www.sentinelone.com/labs/a-glimpse-into-future-scarcruft-campaigns-attackers-gather-strategic-intelligence-and-target-cybersecurity-professionals/" target="_blank" style="text-decoration:none"><div id="button_430e85af">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_1d76d555"><div id="container_1d76d555_padding" ><div class="textstyle3"><span class="textstyle11">Gaza Cybergang | Unified Front Targeting Hamas Opposition</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">14 December, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/gaza-cybergang-unified-front-targeting-hamas-opposition/" target="_blank" style="text-decoration:none"><div id="button_1510df6f">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_50b82ec2"><div id="container_50b82ec2_padding" ><div class="textstyle3"><span class="textstyle11">Sandman APT | China-Based Adversaries Embrace Lua</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Bendik Hagen (PwC), Microsoft Threat Intelligence<br/><br/></span><span class="textstyle10">11 December, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/sandman-apt-china-based-adversaries-embrace-lua/" target="_blank" style="text-decoration:none"><div id="button_62438d26">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_1659716c"><div id="container_1659716c_padding" ><div class="textstyle3"><span class="textstyle11">The Israel-Hamas War | Cyber Domain State-Sponsored Activity of Interest</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Tom Hegel, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">24 October, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/the-israel-hamas-war-cyber-domain-state-sponsored-activity-of-interest/" target="_blank" style="text-decoration:none"><div id="button_2268ee1a">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_3fc84624"><div id="container_3fc84624_padding" ><div class="textstyle3"><span class="textstyle11">Sandman APT | A Mystery Group Targeting Telcos with a LuaJIT Toolkit</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, in collaboration with QGroup<br/><br/></span><span class="textstyle10">21 September, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/sandman-apt-a-mystery-group-targeting-telcos-with-a-luajit-toolkit/" target="_blank" style="text-decoration:none"><div id="button_65901f0d">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle13"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_466cdbc4"><div id="container_466cdbc4_padding" ><div class="textstyle3"><span class="textstyle11">Chinese Entanglement | DLL Hijacking in the Asian Gambling Sector</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Tom Hegel<br/><br/></span><span class="textstyle10">17 August, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/chinese-entanglement-dll-hijacking-in-the-asian-gambling-sector/" target="_blank" style="text-decoration:none"><div id="button_11dfbdf1">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4cc6288"><div id="container_4cc6288_padding" ><div class="textstyle3"><span class="textstyle11">Comrades in Arms? | North Korea Compromises Sanctioned Russian Missile Engineering Company</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Tom Hegel, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">7 August, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/comrades-in-arms-north-korea-compromises-sanctioned-russian-missile-engineering-company/" target="_blank" style="text-decoration:none"><div id="button_504a0431">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_903db13"><div id="container_903db13_padding" ><div class="textstyle3"><span class="textstyle11">Kimsuky Strikes Again | New Social Engineering Campaign Aims to Steal Credentials and Gather Strategic Intelligence</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">6 June, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/kimsuky-new-social-engineering-campaign-aims-to-steal-credentials-and-gather-strategic-intelligence/" target="_blank" style="text-decoration:none"><div id="button_38364aea">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_58804390"><div id="container_58804390_padding" ><div class="textstyle3"><span class="textstyle11">Kimsuky | Ongoing Campaign Using Tailored Reconnaissance Toolkit</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Tom Hegel<br/><br/></span><span class="textstyle10">23 May, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/kimsuky-ongoing-campaign-using-tailored-reconnaissance-toolkit/" target="_blank" style="text-decoration:none"><div id="button_7a17763d">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_525dcd98"><div id="container_525dcd98_padding" ><div class="textstyle3"><span class="textstyle11">Kimsuky Evolves Reconnaissance Capabilities in New Global Campaign</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Tom Hegel, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">4 May, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/kimsuky-evolves-reconnaissance-capabilities-in-new-global-campaign/" target="_blank" style="text-decoration:none"><div id="button_310b3002">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+<span class="textstyle9"><br/></span><span class="textstyle9"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_c35c234"><div id="container_c35c234_padding" ><div class="textstyle3"><span class="textstyle11">Transparent Tribe (APT36) | Pakistan-Aligned Threat Actor Expands Interest in Indian Education Sector</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">13 April, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/transparent-tribe-apt36-pakistan-aligned-threat-actor-expands-interest-in-indian-education-sector/" target="_blank" style="text-decoration:none"><div id="button_2e9b964e">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+<span class="textstyle9"><br/></span><span class="textstyle9"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_2bcb75b4"><div id="container_2bcb75b4_padding" ><div class="textstyle3"><span class="textstyle11">SmoothOperator | Ongoing Campaign Trojanizes 3CXDesktopApp in Supply Chain Attack</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Juan Andres Guerrero-Saade, Asaf Gilboa, David Acs, James Haughom, Phil Stokes, SentinelLabs<br/><br/></span><span class="textstyle10">29 March, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/blog/smoothoperator-ongoing-campaign-trojanizes-3cx-software-in-software-supply-chain-attack/" target="_blank" style="text-decoration:none"><div id="button_1f1cb559">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_4df61a1f"><div id="container_4df61a1f_padding" ><div class="textstyle3"><span class="textstyle11">Operation Tainted Love | Chinese APTs Target Telcos in New Attacks</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Juan Andres Guerrero-Saade, Joey Chen, in collaboration with QGroup<br/><br/></span><span class="textstyle10">23 March, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/operation-tainted-love-chinese-apts-target-telcos-in-new-attacks/" target="_blank" style="text-decoration:none"><div id="button_57ab293b">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+<span class="textstyle9"><br/></span><span class="textstyle9"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_5a8040ab"><div id="container_5a8040ab_padding" ><div class="textstyle3"><span class="textstyle11">WIP26 Espionage | Threat Actors Abuse Cloud Infrastructure in Targeted Telco Attacks</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Collin Farr, Joey Chen, in collaboration with QGroup<br/><br/></span><span class="textstyle10">16 February, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/wip26-espionage-threat-actors-abuse-cloud-infrastructure-in-targeted-telco-attacks/" target="_blank" style="text-decoration:none"><div id="button_5d43ca7b">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+<span class="textstyle9"><br/></span><span class="textstyle9"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_15c124b3"><div id="container_15c124b3_padding" ><div class="textstyle3"><span class="textstyle11">DragonSpark | Attacks Evade Detection with SparkRAT and Golang Source Code Interpretation</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski, Joey Chen, Amitai Ben Shushan Ehrlich<br/><br/></span><span class="textstyle10">24 January, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/dragonspark-attacks-evade-detection-with-sparkrat-and-golang-source-code-interpretation/" target="_blank" style="text-decoration:none"><div id="button_1feff82f">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle14"><br/></span><span class="textstyle9"><br/></span><div id="container_647be58d"><div id="container_647be58d_padding" ><div class="textstyle3"><span class="textstyle11">NoName057(16) &#8211; The Pro-Russian Hacktivist Group Targeting NATO</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Tom Hegel, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">12 January, 2023</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/noname05716-the-pro-russian-hacktivist-group-targeting-nato/" target="_blank" style="text-decoration:none"><div id="button_3b6450bc">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+<span class="textstyle9"><br/></span><span class="textstyle9"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle14"><br/><br/></span><div id="container_2a39fe9d"><div id="container_2a39fe9d_padding" ><div class="textstyle3"><span class="textstyle11">The Mystery of Metador | Unpicking Mafalda&#8217;s Anti-Analysis Techniques</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">1 December, 2022</span><span class="textstyle13"><br/></span>    <span class="textstyle8"> </span>
+    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/the-mystery-of-metador-unpicking-mafaldas-anti-analysis-techniques/" target="_blank" style="text-decoration:none"><div id="button_7a7cb015">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/></span><span class="textstyle14"><br/></span><div id="container_7475d820"><div id="container_7475d820_padding" ><div class="textstyle3"><span class="textstyle11">The Mystery of Metador | An Unattributed Threat Hiding in Telcos, ISPs, and Universities</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Juan Andres Guerrero-Saade, Amitai Ben Shushan Ehrlich, Aleksandar Milenkoski<br/><br/></span><span class="textstyle10">22 September, 2022</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="https://www.sentinelone.com/labs/the-mystery-of-metador-an-unattributed-threat-hiding-in-telcos-isps-and-universities/" target="_blank" style="text-decoration:none"><div id="button_42b57f3b">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle14"><br/><br/></span><div id="container_4ce337c3"><div id="container_4ce337c3_padding" ><div class="textstyle3"><span class="textstyle11">The Mystery of Metador | An Unattributed Threat Hiding in Telcos, ISPs, and Universities (Full Report)</span><span class="textstyle12"><br/><br/></span><span class="textstyle8">Amitai Ben Shushan Ehrlich, Aleksandar Milenkoski, Juan Andres Guerrero-Saade<br/><br/></span><span class="textstyle10">22 September, 2022 </span><span class="textstyle8"><br/></span><span class="textstyle10"><br/></span>    <a href="https://assets.sentinelone.com/sentinellabs22/metador" target="_blank" style="text-decoration:none"><div id="button_2a26ce4c">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">Link</span>
+          </div>
+        </div></div>
+      </div></a>
+    <span class="textstyle9"><br/></span>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_65852279"><div id="container_65852279_padding" ><div class="textstyle3"><span class="textstyle11">The Mystery of Metador | Technical Appendix<br/></span><span class="textstyle12"><br/></span><span class="textstyle8">Aleksandar Milenkoski, Amitai Ben Shushan Ehrlich<br/><br/></span><span class="textstyle10">22 September, 2022</span><span class="textstyle8"><br/> </span>    <span class="textstyle10"><br/></span>
+    <a href="rc_images/metador_technical_appendix.pdf" target="_blank" style="text-decoration:none"><div id="button_45ffab5e">
+      <div class="vcenterstyle1"><div class="vcenterstyle2">        <div class="textstyle3">
+          </div>
+        <div class="textstyle1">
+          <span class="textstyle8">PDF</span>
+          </div>
+        </div></div>
+      </div></a>
+</div>
+<div style="clear:both"></div></div></div><span class="textstyle9"><br/><br/></span><div id="container_47758b79"><div class="textstyle3">    <span class="textstyle9"><br/></span>
+</div>
+</div>    </div>
+</div>
+</div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>

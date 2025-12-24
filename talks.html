@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="generator" content="RocketCake">
+<meta name="description" content="Aleksandar Milenkoski, cybersecurity, talks, research, threat intelligence, threat research">	<title>Aleksandar Milenkoski | Talks</title>
+	<meta name="keywords" content="Aleksandar Milenkoski, cybersecurity, talks, research, threat intelligence, threat research" />
+	<link rel="stylesheet" type="text/css" href="talks_html.css?h=c1e47ddd">
+</head>
+<body>
+<div class="textstyle1">
+<div id="container_2b1a1ed5"><div id="container_2b1a1ed5_padding" ><div class="textstyle1"><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Aleksandar Milenkoski</a></span><span class="textstyle2"><br/><br/></span><span class="textstyle2"><a href="index.html" class="wsp22fd5893">Threat Research | Threat Intelligence | Adversary Analysis</a></span></div>
+<div class="textstyle3"></div>
+</div></div><div id="container_4746e9ac"><div class="textstyle3"><script>																		
+function createsidebarMenu()													
+{																				
+	var sidebar = document.getElementById("thesidebarMenu");				
+	if (!sidebar)																
+	{																		
+		sidebar = document.createElement("div");								
+		sidebar.id = "thesidebarMenu";										
+		sidebar.style.cssText = 'height: 100%; max-width:100vw; width: 0; position: fixed; z-index: 3000; top: 0; left: 0; background-color: #2C2825; overflow-x: hidden; overflow-y:auto; transition: 0.5s;';
+				
+		//document.body.appendChild(sidebar);																		
+		// close button															
+		var closebtn = document.createElement("a");	
+                                //sidebar.appendChild(closebtn);						
+		closebtn.href = 'javascript:void(0)';									
+		closebtn.onclick = closesidebarMenu;									
+		closebtn.style.cssText = 'position: absolute; top: 3%; right: 5%; font-size: clamp(35px, 4.5vw, 60px); color: #FFFFFF; text-decoration: none;';	
+		closebtn.innerHTML = '\&#215 '; // &#215; or &#215; or &times;					
+		sidebar.appendChild(closebtn);	
+                               																	
+		// add links
+															
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERESPIONAGE";
+			aelem.href = 'apt.html';
+                                                aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; margin-top: 15vh; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';
+			sidebar.appendChild(aelem);									
+			var aelem = document.createElement("a");					
+			aelem.textContent = "CYBERCRIME";
+			aelem.href = 'cybercrime.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+			var aelem = document.createElement("a");					
+			aelem.textContent = "WINDOWS INTERNALS";
+			aelem.href = 'winternals.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);	
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "ACADEMIA";
+			aelem.href = 'academia.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "TALKS";
+			aelem.href = 'talks.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+                                                var aelem = document.createElement("a");					
+			aelem.textContent = "COMMUNITY";
+			aelem.href = 'community.html';							
+			aelem.style.cssText = 'padding: 1.5% 1% 1.5% 3%; text-decoration: none; font-family: Segoe, Segoe UI, Helvetica Neue, sans-serif; font-size: clamp(17px, 3.15vw, 40px); color: #FFFFFF; display: block; transition: 0.4s;';	
+			sidebar.appendChild(aelem);
+																			
+		document.body.appendChild(sidebar);											
+	}																				
+}																				
+createsidebarMenu();																																			
+function opensidebarMenu() 														
+{																					
+	var sidebarWidth = "90%";									
+																					
+	var sidebar = document.getElementById("thesidebarMenu");						
+	sidebar.style.width = sidebarWidth;												
+  																					
+	// set margin of all top containers to width									
+																					
+	//for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		//if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+		//{																			
+			//child.style.transition = "margin-left .5s";							
+			//child.style.marginLeft = sidebarWidth;									
+		//} 																			
+}																					
+																					
+function closesidebarMenu() 														
+{																					
+  document.getElementById("thesidebarMenu").style.width = "0";					
+  																					
+  // set margin of all top containers back											
+																					
+	for(var child=document.body.firstChild; child!==null; child=child.nextSibling) 	
+		if (child.tagName == 'DIV' && child.id != 'thesidebarMenu')					
+			child.style.marginLeft = "0";											
+}																					
+</script>
+												<a href=" javascript:opensidebarMenu();" style="text-decoration:none"><div id="button_39dc1fcb"><div class="vcenterstyle1"><div class="vcenterstyle2"><div class="textstyle3"></div>
+<div class="textstyle1">  <span class="textstyle4">&#8801; Menu</span>
+</div>
+<div class="textstyle3"></div>
+</div></div></div></a></div>
+<div class="textstyle1"><div id="menu_5f8bee95"><div  id="menu_5f8bee95_menualignmentwrapper" ><div  class="menuholder1"><a href="javascript:void(0);" tabindex="-1" aria-label="&#8801;" >
+	<div id="menuentry_6f12c37a"  class="menustyle1 menu_5f8bee95_mainMenuEntry mobileEntry">
+		<div class="menuentry_text1">
+  <span class="textstyle5">&#8801;</span>
+		</div>
+	</div>
+</a>
+<a href="apt.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_2bf3ca44"  class="menustyle2 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cyberespionage</span>
+		</div>
+	</div>
+</a>
+<a href="cybercrime.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_10274de8"  class="menustyle3 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Cybercrime</span>
+		</div>
+	</div>
+</a>
+<a href="winternals.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_6a79eea8"  class="menustyle4 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Windows Internals</span>
+		</div>
+	</div>
+</a>
+<a href="academia.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_3bb8a4fa"  class="menustyle5 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Academia</span>
+		</div>
+	</div>
+</a>
+<a href="talks.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_5d208a30"  class="menustyle6 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Talks</span>
+		</div>
+	</div>
+</a>
+<a href="community.html" style="text-decoration:none" tabindex="-1">
+	<div id="menuentry_1aa18056"  class="menustyle7 menu_5f8bee95_mainMenuEntry normalEntry">
+		<div class="menuentry_text2">
+  <span class="textstyle6">Community</span>
+		</div>
+	</div>
+</a>
+
+	<script type="text/javascript" src="rc_images/wsp_menu.js"></script>
+	<script type="text/javascript">
+		var js_menu_5f8bee95= new wsp_menu('menu_5f8bee95', 'menu_5f8bee95', 15, null, true, {generateAriaLabels: true, setUsefulTabIndices: true, closeWhenMouseOut: false} );
+
+		js_menu_5f8bee95.createMenuForItem('menuentry_6f12c37a', ["  <span class=\"textstyle7\">Cyberespionage</span> ", 'apt.html', '',
+		                                   "  <span class=\"textstyle7\">Cybercrime</span> ", 'cybercrime.html', '',
+		                                   "  <span class=\"textstyle7\">Windows Internals</span> ", 'winternals.html', '',
+		                                   "  <span class=\"textstyle7\">Academia</span> ", 'academia.html', '',
+		                                   "  <span class=\"textstyle7\">Talks</span> ", 'talks.html', '',
+		                                   "  <span class=\"textstyle7\">Community</span> ", 'community.html', '']
+		                                   , true);
+		js_menu_5f8bee95.createMenuForItem('menuentry_2bf3ca44', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_10274de8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_6a79eea8', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_3bb8a4fa', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_5d208a30', []);
+		js_menu_5f8bee95.createMenuForItem('menuentry_1aa18056', []);
+
+	</script>
+</div></div></div></div>
+</div><div id="container_495e96cc"><div id="container_495e96cc_padding" ></div></div><div id="container_7a5ef65"><div id="container_7a5ef65_padding" ><div class="textstyle1"><div  id="placeh_36035886" >
+  <div class="textstyle3">
+<div id="container_70a9d3b"><div id="container_70a9d3b_padding" ><div class="textstyle3">    <span class="textstyle8"><a href="index.html">Home</a></span>
+    <span class="textstyle8"> &gt; Talks</span>
+</div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_557cf387"><div id="container_557cf387_padding" ><div class="textstyle3">    <span class="textstyle10">Ransomware and Beyond: Exploring Strategic Objectives of Chinese Cyber Operations  </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">King's College London (2025)</span><span class="textstyle8"><br/><br/>Various research publications suggest that, since its inception, the Chinese Communist Party (CCP) has maintained ties with criminal organizations. Indicators suggest that this legacy likely persists in the cyber domain today. Suspected state-aligned Chinese cyber actors affiliate with cybercriminal groups and use tactics typically associated with them, including ransomware, a destructive malware typically linked to cybercrime.<br/><br/>This discussion-based seminar will explore the alleged CCP&#8217;s historical relationship with criminal elements and examine how that relationship has likely evolved in the modern era. It will broaden the conversation beyond ransomware to consider currently relevant strategic objectives associated with its use by suspected Chinese threat actors, including personal enrichment, which is likely overlooked or tolerated by the state and driven by socio-economic factors, strategic disruption, and plausible deniability.<br/><br/>Continuing the discussion of plausible deniability, the seminar will also invite dialogue on China&#8217;s growing efforts to portray itself as a responsible actor in the cyber domain and shape the public narrative around cyber conflict, particularly through the disclosure of alleged cyberespionage operations by Western-aligned entities.</span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_46aa4cd8"><div id="container_46aa4cd8_padding" ><div class="textstyle3">    <span class="textstyle10">CamoFei Meets the Taliban  </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">LabsCon 2025</span><span class="textstyle8"><br/><br/>CamoFei (which overlaps with ChamelGang, TAG-112, or Evasive Panda) sets itself apart within the landscape of China-linked APT groups through a dual-track operational model that blends traditional cyber espionage with disruptive activities. The group continues to target high-profile entities of strategic interest to Chinese intelligence, including Tibetan and Taiwanese organizations, while simultaneously engaging in operations that suggest influence or destabilization objectives, often layered with plausible deniability.   <br/><br/>As of early 2025, CamoFei remains highly active, expanding its reach across a diverse set of governmental and private-sector targets in Southeast Asia, Europe, and the Middle East while adopting new tactics and techniques. Its recent compromise of Taliban networks in Afghanistan, which coincided with a suspected hack-and-leak influence campaign targeting the Taliban itself, points to a possible evolution toward hybrid operations that merge technical intrusions with geopolitical narratives. While the shift remains unconfirmed, it reflects the broader challenge posed by the increasingly blurred lines between espionage, influence operations, and cybercrime, making attribution and intent analysis more difficult. <br/><br/>As multiple of these CamoFei victims exhibit signs of concurrent compromise by other Chinese-nexus groups, the case underscores a broader analytic challenge, namely, that overlapping intrusions within the same victim environments complicate attribution and intent analysis, raising important questions about coordination, operational autonomy, and competition within the broader Chinese threat ecosystem.</span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_5ae194a6"><div id="container_5ae194a6_padding" ><div class="textstyle3">    <span class="textstyle10">Ransomware&#8217;s New Masters: How States Are Hijacking Cybercrime  </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">Hague TIX 2025</span><span class="textstyle8"><br/><br/>Ransomware is no longer just a tool for financial extortion. Nation-states now use this destructive malware for disruption, misattribution, and evidence removal. In this talk, we explore how state-linked threat actors associated with some of the most prominent players in the cyber threat landscape &#8212; Russia, North Korea, China, and Iran &#8212;  are using ransomware not only for financial gain but to advance their strategic goals.<br/><br/>This talk takes a comparative look at the key differences and similarities in how these threat groups use ransomware. We examine their operational methods and objectives, considering how each country's geopolitical context shapes their approach. We provide both historical and current perspectives, including past cases and previously undisclosed details on recent cyber operations.<br/><br/>We also explore the growing involvement of state-linked actors in ransomware-as-a-service (RaaS) operations, leveraging cybercriminal networks to increase operational efficiency and maintain plausible deniability. Finally, we discuss the future of ransomware in state-sponsored operations, examining how and to what end states are likely to continue using this tactic, implications for defenders, and challenges in countering this threat.</span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_4581182d"><div id="container_4581182d_padding" ><div class="textstyle3">    <span class="textstyle10">The Watched Watching Back: North Korean Threat Actors Investigate Public Threat Intelligence  </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">SLEUTHCON 2025</span><span class="textstyle8"><br/><br/>Threat actors have long demonstrated an interest in public threat intelligence reporting about them. This interest is driven by strategic motivations: to assess their exposure, adapt their operations, and undermine the effectiveness of defensive measures.<br/><br/>In this talk, we present our investigation into a campaign in which suspected North Korean threat actors showed significant interest in Validin&#8217;s threat intelligence data, particularly infrastructure publicly attributed to them and related disclosures about their operations. We detail how we attributed this activity to a specific North Korean threat cluster known for cyberespionage and financial crimes with a focus on targeting individuals and organizations in the cryptocurrency industry.<br/><br/>Our investigation also uncovered backend web code used by the threat actors to support their campaigns, likely exposed due to operational security lapses.</span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_958acde"><div id="container_958acde_padding" ><div class="textstyle3">    <span class="textstyle10">Camouflage and Chaos  |  On the Trail of Chinese APTs Playing the Ransomware Game </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">CyberThreat 2024</span><span class="textstyle8"><br/><br/>The APT vs. cybercrime debate has been a staple of cyber threat discussions for years, but recent years have seen a convergence that challenges traditional categorizations and demands a fresh perspective. Cyberespionage groups are involved in a disturbing scheme: deploying ransomware as a final act in their operations to secure financial gain, cause disruption, create confusion, misdirect blame, or erase evidence. This tactic allows adversarial countries to maintain plausible deniability by attributing these actions to independent cybercriminals rather than state-sponsored entities.<br/><br/>From high-tech research in Europe to healthcare in India. From manufacturing in the Americas to aviation and government in the Indian subcontinent and the Far East. We trace this global trail of suspected Chinese APT clusters taking on cybercriminal roles. The involvement of operatives moonlighting as cybercriminals and dual-role contractors in the Chinese cyberespionage ecosystem adds further layers of ambiguity. We expose custom tooling, dubious &quot;ransomware affiliates&quot;, and additional links between ransomware operations and espionage clusters. We dive into key risks this ransomware tactic poses to government cybersecurity organizations and private sector defenders, such as missed intelligence opportunities and diminished situational awareness, and explore challenges in countering this threat.<br/></span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_3892caa9"><div id="container_3892caa9_padding" ><div class="textstyle3">    <span class="textstyle10">There&#8217;s more &#8220;Un&#8221; To This Story | The Details We Did Not Share </span>
+<span class="textstyle11"><br/><br/></span><span class="textstyle12">PIVOTCON 2024</span><span class="textstyle8"><br/><br/>In this talk, we reveal previously undisclosed details about several North Korean APT activities we have unearthed over the past months. Our objective is to enrich the accumulated intelligence on the North Korean cyber threat landscape within the community and contribute to a deeper understanding of the evolving tactics used by its constituent groups.<br/><br/>This presentation begins by revealing deceptive lateral movement tactics observed during our investigation into an intrusion at NPO Mashinostroyeniya, a Russian missile engineering firm. We then explore ScarCruft's testing grounds &#8212; a collection of malware recovered during the planning and testing phases of the group's development cycle, likely intended for future campaigns. We disclose here our insights into ScarCruft's infrastructure, malware implementation processes, and experimentation with staging and evasive techniques. In concluding the technical discussion, we share curious relationships to cryptocurrency scams, highlighting North Korea's evolving interest in the cryptocurrency industry.<br/><br/>During times of major shifts in the North Korean foreign policy, the future trajectory of the country's cyber activities is uncertain. We conclude our presentation by speculating on potential changes in North Korea's cyber strategies and their implications for threat intelligence collection and effective defense.</span><span class="textstyle13"><br/></span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_672bb1f9"><div id="container_672bb1f9_padding" ><div class="textstyle3"><span class="textstyle10">Deceit Among Comrades | DPRK&#8217;s Intrusion Into Russian Defense Industrial Base</span><span class="textstyle11"><br/><br/></span><span class="textstyle12">CYBERWARCON 2023</span><span class="textstyle8"><br/><br/>Based on a compelling data leak within Russia's defense sector, we recently unearthed an intrusion by DPRK-affiliated threat actors into the Russian missile engineering firm NPO Mashinostroyeniya. With an intensive public display of the strengthening military relationship between the two countries, our findings provide rare insight into DPRK&#8217;s clandestine operations against Russia.<br/><br/>This presentation begins by exploring the ties between DPRK and Russia during the period of the noted breach. We subsequently delve into our methods for pinpointing and recognizing the data breach at NPO Mashinostroyeniya and its significance in the Russian Defense Industrial Base. We then shed light on the organization's security challenges and highlight the threat activity we attribute to DPRK, amidst a slew of peculiar infections and abused network services. We finish by discussing the complexities and dilemmas we faced during this distinctive intrusion investigation.</span><span class="textstyle13"><br/></span></div>
+</div></div><span class="textstyle9"><br/><br/></span><div id="container_66b3c1"><div id="container_66b3c1_padding" ><div class="textstyle3"><span class="textstyle10">The Grand Luau</span><span class="textstyle11"><br/><br/></span><span class="textstyle12">LabsCon 2023</span><span class="textstyle8"><br/><br/>SentinelLabs has observed a new threat activity cluster by an unknown threat actor we have dubbed Sandman. Sandman has been primarily targeting telecommunication providers in the Middle East, Western Europe, and the South Asian subcontinent.<br/><br/>The activities are characterized by strategic lateral movements and minimal engagements, likely to minimize the risk of detection. Sandman has deployed a novel modular backdoor utilizing the LuaJIT platform, a relatively rare occurrence in the threat landscape. We refer to this malware as LuaDream. The implementation of LuaDream indicates a well-executed, maintained, and actively developed project of a considerable scale.<br/><br/>At this time, we don&#8217;t have a consistent sense of attribution. LuaDream does not appear to be related to any known threat actors. While the development style is historically associated with a specific type of advanced threat actor, inconsistencies between the high-end development of the malware and poor segmentation practices lead us towards the possibility of a private contractor or mercenary group similar to Metador.</span></div>
+</div></div><span class="textstyle14"><br/><br/></span><div id="container_7faacff0"><div id="container_7faacff0_padding" ><div class="textstyle3"><span class="textstyle10">The Wire on Fire: The Spies Who Loved Telcos</span><span class="textstyle11"><br/></span><span class="textstyle15"><br/></span><span class="textstyle12">TROOPERS 2023</span><span class="textstyle8"><br/><br/>Telecommunication providers are frequent targets of espionage and cybercriminal activity due to the sensitive data they hold. From close-knit groups with strategic interests, such as LightBasin and APT41, to loosely affiliated assemblies, such as Lapsus$, the security of Telcos is under constant threat.<br/><br/>In this talk, we review recent targeted attacks against telecommunication providers. We provide insights into a variety of threat activities whose understanding is relevant for better defending against them - from initial infection vectors, detection evasion techniques at malware implementation- and network-level, to OPSEC awareness levels threat actors exhibit. We peek into the current Telco threat landscape to provide relevant takeaways for defenders and foster further discussions on the topic.</span></div>
+</div></div><span class="textstyle14"><br/></span><span class="textstyle16"><br/></span><div id="container_5e4e25f6"><div id="container_5e4e25f6_padding" ><div class="textstyle3"><span class="textstyle10">Recent Espionage and Hacktivism Threats: A SentinelLabs Overview</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">Centre for Cybersecurity Belgium (CCB) - Connect &amp; Share event QCTR-Q1 2023</span><span class="textstyle8"><br/><br/>This talk reviews recent espionage and hacktivism activities, most of which are aligned to Chinese and Russian interests. We discuss the growing trend of espionage actors using Cloud infrastructure for C2 purposes in an attempt to evade detection. We also delve into operation Tainted Love, an APT activity in the nexus of the Chinese cyberespionage groups Gallium and APT41. Next, we explore the Russian-aligned hacktivist group NoName057(16) targeting NATO's infrastructure and end up with an overview of the Russian Winter Vivern group, which has been conducting espionage campaigns in the US and Europe since at least 2018.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_4cfe0456"><div id="container_4cfe0456_padding" ><div class="textstyle3"><span class="textstyle10">(Encryption) Time Flies When You're Having Fun: The Case of The Exotic BlackCat Ransomware</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">Virus Bulletin 2022</span><span class="textstyle8"><br/><br/>Time is critical for ransomware operators &#8211; the faster they encrypt the victim's files, the less likely they are to be detected in the process. Encryption can be a time-consuming process, and ransomware developers know this. That is why they get creative when programming encryption routines &#8211; the goal is to minimize the time spent on encryption and maximize the amount of encrypted file content. In this way, the greatest possible irretrievable damage is done in the shortest possible time.<br/><br/>BlackCat is a new and very high-profile player in the current ransomware scene. The way BlackCat performs encryption is highly customizable and ALPHV uses this as an advertising tool to attract affiliates. BlackCat operators can choose between six encryption modes and two encryption algorithms. Ransomware operators can further configure each encryption mode with mode-specific settings. Each encryption mode and algorithm occupies a specific position on the trade-off scale between encryption speed and completeness. <br/><br/>We reverse-engineered the BlackCat ransomware to provide a first look into the inner workings of the encryption modes that BlackCat implements. Our analysis provides a unique insight into the design decisions that ransomware developers make to achieve an optimal balance between encryption speed and encryption completeness. This work also tests the encryption modes and encryption algorithms that BlackCat implements. We conducted a series of experiments to measure in numbers the trade-off between encryption speed and completeness that the different modes achieve. We examine metrics such as encryption speed, time spent on encryption, and amount of file content encrypted.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_20d3edcd"><div id="container_20d3edcd_padding" ><div class="textstyle3"><span class="textstyle10">The Mystery of Metador</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">LabsCon 2022</span><span class="textstyle8"><br/><br/>SentinelLabs researchers uncovered a never-before-seen advanced threat actor we&#8217;ve dubbed &#8216;Metador&#8217;. Metador primarily targets telecommunications, internet service providers, and universities in several countries in the Middle East and Africa. The operators are highly aware of operations security, managing carefully segmented infrastructure per victim, and quickly deploying intricate countermeasures in the presence of security solutions. Metador&#8217;s attack chains are designed to bypass native security solutions while deploying malware platforms directly into memory. <br/><br/>SentinelLabs researchers discovered variants of two long-standing Windows malware platforms, and indications of an additional Linux implant. At this time, there&#8217;s no clear, reliable sense of attribution. Traces point to multiple developers and operators that speak both English and Spanish, alongside varied cultural references including British pop punk lyrics and Argentinian political cartoons. While Metador appears primarily focused on enabling collection operations aligned with state interests, we&#8217;d point to the possibility of a high-end contractor arrangement not tied to a specific country. This release is a call to action for threat intelligence researchers, service providers, and defenders to collaborate on tracking an elusive adversary acting with impunity.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_5369b8e2"><div id="container_5369b8e2_padding" ><div class="textstyle3"><span class="textstyle10">PowerShell: Under-the-radar attacks</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">Heise Security Tour 2019</span><span class="textstyle8"><br/><br/>This talk focusses on the malicious use of PowerShell in attack campaigns. In addition, this talk presents the architecture of PowerShell and how PowerShell integrates in the Windows operating system.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_49e1f76c"><div id="container_49e1f76c_padding" ><div class="textstyle3"><span class="textstyle10">The Anatomy of Windows Telemetry</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">TROOPERS 2019</span><span class="textstyle8"><br/><br/>Telemetry, a mechanism for transmitting collected data to a remote location for analysis, is becoming increasingly ubiquitous in software. Its widespread presence raises concerns related to the content, the security, and the privacy of collected data. This makes telemetry an important target for analysis. <br/><br/>This talk focusses on the telemetry mechanism implemented in Windows 10 &#8211; Windows Telemetry. We first discuss the relevance of Windows Telemetry for analysis, with an emphasis on concerns critical to users of Windows 10 and of telemetry-enabled software in general. We then give an overview of its architecture. This includes the data sources, showing the extent of integration of Windows Telemetry in the operating system itself. In addition, we present on the communication interfaces of Windows Telemetry and characterize the network traffic originating from it. Finally, we discuss how the activity of Windows Telemetry can be reduced or stopped. We present the advantages and disadvantages of the different approaches for achieving this as well as relevant operational aspects.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_129759cf"><div id="container_129759cf_padding" ><div class="textstyle3"><span class="textstyle10">Quantifying the Attack Detection Accuracy of Intrusion Detection Systems in Virtualized Environments</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">The 27th IEEE International Symposium on Software Reliability Engineering (ISSRE 2016)</span><span class="textstyle8"><br/><br/>With the widespread adoption of virtualization, intrusion detection systems (IDSes) are increasingly being deployed in virtualized environments. When securing an environment, IT security officers are often faced with the question of how accurate deployed IDSes are at detecting attacks. To this end, metrics for assessing the attack detection accuracy of IDSes have been developed. However, these metrics are defined with respect to a fixed set of hardware resources available to the tested IDS. Therefore, IDSes deployed in virtualized environments featuring elasticity (i.e., on-demand allocation or deallocation of virtualized hardware resources during system operation) cannot be evaluated in an accurate manner using existing metrics. In this paper, we demonstrate the impact of elasticity on IDS attack detection accuracy. In addition, we propose a novel metric and measurement methodology for accurately quantifying the accuracy of IDSes deployed in virtualized environments featuring elasticity. We demonstrate their practical use through case studies involving commonly used IDSes.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_1a44ca89"><div id="container_1a44ca89_padding" ><div class="textstyle3"><span class="textstyle10">Evaluation of Intrusion Detection Systems in Virtualized Environments Using Attack Injection</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">The 18th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2015)<br/></span><span class="textstyle8"><br/>The evaluation of intrusion detection systems (IDSes) is an active research area with many open challenges, one of which is the generation of representative workloads that contain attacks. In this paper, we propose a novel approach for the rigorous evaluation of IDSes in virtualized environments, with a focus on IDSes designed to detect attacks leveraging or targeting the hypervisor via its hypercall interface. We present hInjector, a tool for generating IDS evaluation workloads by injecting such attacks during regular operation of a virtualized environment. We demonstrate the application of our approach and show its practical usefulness by evaluating a representative IDS designed to operate in virtualized environments. The virtualized environment of the industry-standard benchmark SPECvirt_sc2013 is used as a testbed, whose drivers generate workloads representative of workloads seen in production environments. This work enables for the first time the injection of attacks in virtualized environments for the purpose of generating representative IDS evaluation workloads.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_7917f30d"><div id="container_7917f30d_padding" ><div class="textstyle3"><span class="textstyle10">An Analysis of Hypercall Handler Vulnerabilities</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><span class="textstyle12">The 25th IEEE International Symposium on Software Reliability Engineering (ISSRE 2014)</span><span class="textstyle8"><br/><br/>Hypervisors are becoming increasingly ubiquitous with the growing proliferation of virtualized data centers. As a result, attackers are exploring vectors to attack hypervisors, against which an attack may be executed via several attack vectors such as device drivers, virtual machine exit events, or hypercalls. Hypercalls enable intrusions in hypervisors through their hypercall interfaces. Despite the importance, there is very limited publicly available information on vulnerabilities of hypercall handlers and attacks triggering them, which significantly hinders advances towards monitoring and securing these interfaces. In this paper, we characterize the hypercall attack surface based on analyzing a set of vulnerabilities of hypercall handlers. We systematize and discuss the errors that caused the considered vulnerabilities, and activities for executing attacks triggering them. We also demonstrate attacks triggering the considered vulnerabilities and analyze their effects. Finally, we suggest an action plan for improving the security of hypercall interfaces.</span></div>
+</div></div><span class="textstyle16"><br/><br/></span><div id="container_7c85ee78"><div id="container_7c85ee78_padding" ><div class="textstyle3"><span class="textstyle10">Invited Talks</span><span class="textstyle13"><br/></span><span class="textstyle11"><br/></span><div id="container_47a52391"><div id="container_47a52391_padding" ><div class="textstyle3"><span class="textstyle8">Evaluation of Intrusion Detection Systems in Virtualized Environments. At Berlin-Brandenburg Academy of Sciences and Humanities, Berlin, Germany</span><span class="textstyle13"><br/><br/>2018</span></div>
+</div></div><span class="textstyle11"><br/><br/></span><div id="container_64cc4149"><div id="container_64cc4149_padding" ><div class="textstyle3"><span class="textstyle8">Intrusion Detection Systems. At University of Stuttgart, Stuttgart, Germany</span><span class="textstyle13"><br/><br/>2015</span></div>
+</div></div><span class="textstyle11"><br/><br/></span><div id="container_abd1113"><div id="container_abd1113_padding" ><div class="textstyle3"><span class="textstyle8">Evaluating Security Mechanisms in Dynamic Virtualized Environments. At Dagstuhl Seminar &quot;Model-driven Algorithms and Architectures for Self-Aware Computing Systems&quot;, Dagstuhl, Germany<br/><br/></span><span class="textstyle13">2015</span></div>
+</div></div><span class="textstyle13"><br/><br/></span><div id="container_ea101d0"><div id="container_ea101d0_padding" ><div class="textstyle3"><span class="textstyle8">Benchmarking Intrusion Detection Systems for Virtualized Environments at SPEC RG. At European Workshop on Dependable Computing (EWDC), Coimbra, Portugal</span><span class="textstyle13"><br/><br/>2013</span></div>
+</div></div><span class="textstyle13"><br/><br/></span><div id="container_70cb83dd"><div id="container_70cb83dd_padding" ><div class="textstyle3"><span class="textstyle8">Benchmarking VMM-based Intrusion Detection Systems and Cloud Research at SPEC. At INRIA Seminar &quot;Software Engineering for Adaptive and Cloud Systems&quot;, Rennes, France<br/><br/></span><span class="textstyle13">2013</span></div>
+</div></div><span class="textstyle8"><br/><br/></span><div id="container_6cee6b5e"><div id="container_6cee6b5e_padding" ><div class="textstyle3"><span class="textstyle8">Ensuring Dependability of Virtualized Cloud Infrastructures Through Reliable Intrusion Detection. At Charles University, Prague, Czech Republic<br/><br/></span><span class="textstyle13">2012</span></div>
+</div></div><span class="textstyle8"><br/></span></div>
+<div style="clear:both"></div></div></div><span class="textstyle16"><br/><br/></span><div id="container_226d4505"><div class="textstyle3">    <span class="textstyle14"><br/></span>
+</div>
+</div>    </div>
+</div>
+</div>
+<div style="clear:both"></div></div></div>  </div>
+</body>
+</html>
